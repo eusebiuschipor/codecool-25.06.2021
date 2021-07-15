@@ -1,0 +1,21 @@
+.quote {
+  border: 1px solid #fa923f;
+  background: #ffbd87;
+  font-family: sans-serif;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.quote--featured {
+  border: #ff4213;
+  background: #ff9f87;
+  grid-column: span 2;
+}
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: minmax(200px, auto);
+  justify-content: center;
+  
+}

@@ -1,0 +1,65 @@
+/*
+    .nume-clasa {
+    }
+
+    #nume-id {
+    }
+
+    body {}
+
+    nav {}
+
+    footer {}
+
+    main {}
+
+    main.nume-clasa {}
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    border: 3px solid red;
+    background-color: aqua;
+    padding: 30px;
+    /* margin: 20px; */
+    /* height: 300px; */
+    /* width: 300px; */
+    /* height: 100%; */
+}
+
+.first {
+    height: 100%;
+}
+
+.second {
+    height: 300px;
+    width: 20%;
+    display: inline-block;
+    float: left;
+}
+
+.third {
+    height: 300px;
+    width: 30%;
+    /* display: inline-block; */
+    float: left;
+}
+
+.third:hover {
+    border-color: green;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+#first-box {
+    /* display: none; */
+    /* visibility: hidden; */
+}

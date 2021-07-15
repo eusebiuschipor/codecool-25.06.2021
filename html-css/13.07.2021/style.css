@@ -1,0 +1,50 @@
+.website-section {
+    background-color: #067EED;
+    border: 1px solid white;
+    color: white;
+    min-height: 200px;
+}
+
+.full-height-section {
+    min-height: 100vh;
+}
+
+.article {
+    min-height: 600px;
+}
+
+* {
+    color: white;
+}
+
+.blue1 {
+    background-color: #0E3854;
+}
+
+.blue2 {
+    background-color: #067EED;
+}
+
+.blue3 {
+    background-color: #280B6F;
+}
+
+.blue4 {
+    background-color: #6730EC;;
+}
+
+.blue5 {
+    background-color: #7984EE;
+}
+
+.orange {
+    background-color: #FF7C1F;
+}
+
+[class*="col"] {
+    padding: 20px;
+    /* background-color: #33b5e5; */
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+}

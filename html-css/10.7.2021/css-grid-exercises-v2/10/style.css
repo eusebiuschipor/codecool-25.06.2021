@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    grid-auto-rows: 300px;
+
+
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}

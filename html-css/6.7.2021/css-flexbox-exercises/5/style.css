@@ -1,0 +1,58 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 100px;
+  height: 38px;
+  border: none;
+}
+
+div {
+  height: 100px;
+  border: 1px solid black;
+}
+
+/* Add your code here: */
+.container {
+  display: flex;
+}
+
+.container-1 {
+  justify-content: flex-start;
+}
+
+.container-1 button {
+  border: 1px solid blue;
+}
+
+.container-2 {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.container-3 {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-3 button {
+  margin: 0 10px;
+}
+
+.container-4 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-5 {
+  align-items: flex-start;
+  justify-content: space-around;
+}
+

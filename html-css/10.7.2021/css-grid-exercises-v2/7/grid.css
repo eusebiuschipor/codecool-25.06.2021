@@ -1,0 +1,23 @@
+main {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px auto 200px; 
+    grid-template-areas: "text1 text1"
+                         "image-1 image-2"
+                         "text2 text2";
+    justify-items: center;
+    align-items: center;
+    padding: 100px;
+}
+.description-top {
+    grid-area: text1 ;
+}
+.image-1 {
+    grid-area: image-1;
+}
+.image-2 {
+    grid-area: image-2;
+}
+.description-bottom {
+    grid-area: text2 ;
+}

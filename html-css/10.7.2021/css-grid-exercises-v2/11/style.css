@@ -1,0 +1,146 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --background: #ccc;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background-color: var(--background);
+    margin: 30px 50px;
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--dark);
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+    background-color: var(--dark);
+    color:var(--primary);
+}
+
+img {
+    max-width: 100%;
+}
+
+.top-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        "showcase top-box-a"
+        "showcase top-box-b";
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    grid-area: showcase;
+    min-height: 400px;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(img/web.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--primary);
+    padding: 20px;
+}
+
+.btn {
+    background-color: var(--dark);
+    color: var(--light);
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: var(--shadow);
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: var(--light);
+    color:  var(--dark);
+}
+
+.top-box,
+.box,
+.info {
+    box-shadow: var(--shadow);
+    background-color: var(--primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+.boxes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.info {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+    .showcase {
+        display: none;
+    }
+
+    .top-container {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+            "top-box-a"
+            "top-box-b";
+    }
+}

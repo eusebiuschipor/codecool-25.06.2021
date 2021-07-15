@@ -1,0 +1,52 @@
+html {
+    height: 2000px;
+}
+  
+body {
+    margin: 0;
+}
+    
+.parent {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.parent .country {
+    background: #fa923f;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin-top: 30px;
+    position: sticky;
+    top: 60px;
+}
+    
+.parent .cities {
+    background: rgb(105, 105, 109);
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin-top: 10px;
+    height: 50px;
+    position: relative;
+}
+
+.navigation-bar {
+    background: #fa923f;
+    padding: 10px;
+    color: white;
+    border: 5px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999999;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

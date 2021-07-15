@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 100px;
+  height: 38px;
+  border: none;
+}
+
+div {
+  height: 100px;
+  border: 1px solid black;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
