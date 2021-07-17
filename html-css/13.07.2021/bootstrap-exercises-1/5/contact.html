@@ -21,14 +21,107 @@
         https://getbootstrap.com/docs/5.0/forms/overview/ 
     -->
 
-    <div>
-        <div>
-            <div>
-                <p>Contact</p>
-                <form>
-                </form>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light navColor">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse d-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+           </form>
+          </div>
         </div>
+      </nav>
+
+    <div class="container">
+        <div class="fs-1 fw-bold text-center">Contact</div>
+        <form>
+            <div class="row mt-3">
+                <div class="col-md-6 col-sm-12">
+                    <label for="Nume" class="form-label">Nume</label>
+                    <input type="text" class="form-control" id="Nume"/>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="Prenume" class="form-label">Prenume</label>
+                    <input type="text" class="form-control" id="Prenume"/>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="Email"/>
+                </div>
+            </div>
+            <div class = "row mt-3">
+                <div class="col">
+                    <label for="Mesaj" class="form-label">Mesaj</label>
+                    <textarea type="text" class="form-control" id="Mesaj" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 col-sm-12">
+                    <label for="Adresa" class="form-label">Adresa</label>
+                    <input type="text" class="form-control" id="Adresa" placeholder="adresa ta aici"/>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="Oras" class="form-label">Oras</label>
+                    <input type="text" class="form-control" id="Oras" placeholder="Oras Resedinta"/>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 col-sm-12">
+                    <label for="Tara" class="form-label">Tara</label>
+                    <select class="form-select">
+                        <option>Selecteaza tara</option>
+                        <option>Romania</option>
+                        <option>Grecia</option>
+                        <option>Spania</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="Oras" class="form-label">Oras</label>
+                    <select class="form-select">
+                        <option>Selecteaza Orasul</option>
+                        <option>Cluj</option>
+                        <option>Timisoara</option>
+                        <option>Bucuresti</option>
+                    </select>
+                </div>
+                <div class="row mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="RememberMe">
+                        <label class="form-check-label" for="RememberMe">Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <button type="button" class="btn btn-success">Submit</button>
+            </div>
+
+                
+        </form>
     </div>
 </body>
 </html>
