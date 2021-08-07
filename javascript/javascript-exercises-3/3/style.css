@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+main > * {
+    margin-bottom: 30px;
+}
+
+.content {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    height: 100px;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+}
